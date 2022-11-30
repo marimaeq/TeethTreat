@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        {% for doctor in doctors %}
+        <h2>{{ doctor.speciality }}</h2>
+        <h4> {{ doctor.name }}</h4>
+        <h1>--</h1>
+        {% endfor %}
+    </body>
+</html>
