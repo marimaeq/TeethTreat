@@ -2,6 +2,7 @@
 <html>
     <body>
         {% for doctor in doctors %}
+        <img src="{{ doctor.image }}" alt="image"> 
         <h2>{{ doctor.speciality }}</h2>
         <h4> {{ doctor.name }}</h4>
         <h1>--</h1>
