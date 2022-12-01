@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    <body>
+        {% for doc in doctors %}
+            <h3>{{ doc.speciality }}</h3>
+            <p>{{ doc.name }}</p>
+            <img src="{% static doc.photo.name %}" alt="My image" width="100">
+            <a href="http://localhost:8000/booking-page/">Make an appointment</a>
+            <br><br><br><br>
+        {% endfor %}
+    </body>
+</html>
